@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Travel Destinations</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="root" class="Sideview">
+    <div class="form-wrapper">
+      <h1>Create new entry</h1>
+      <form id="Formplace">
+        <label for="Title">Title of the post</label>
+        <input name="Title" id="Title" type="text" required />
+        <label for="Formdate">The travel available from:</label>
+        <input name="Formdate" id="Formdate" type="date" required />
+        <label for="Todate">The travel available to:</label>
+        <input name="Todate" id="Todate" type="date" required />
+        <label for="Story_tell">About the trip:</label>
+        <textarea
+          name="Story_tell"
+          id="Story_tell"
+          type="text"
+          required
+        ></textarea>
+        <label for="Location">Location of the travel:</label>
+        <input name="Location" id="Location" type="text" required />
+        <!--input name="country" id="country" type="text" required-->
+        <label for="Picture">Image URL:</label>
+        <input name="Picture" id="Picture" type="url" required />
+        <button type="submit">Submit destination</button>
+      </form>
+      <p id="submitMessage"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
